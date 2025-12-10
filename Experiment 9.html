@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); 
+            gap: 20px; 
+        }
+
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        .product-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .product-card p {
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .product-card .price {
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #e60000;
+        }
+
+        @media (min-width: 600px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .product-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Products</h1>
+        <div class="product-grid">
+
+            <div class="product-card">
+                <img src="https://louisemporium.com/wp-content/uploads/2023/12/photo_2023-12-26_09-55-03.jpg" alt="Product 1">
+                <h3>Product One</h3>
+                <p>This is a short description of Product One. It's amazing!</p>
+                <span class="price">₹8,890</span>
+            </div>
+
+            <div class="product-card">
+                <img src="https://dtcralphlauren.scene7.com/is/image/PoloGSI/s7-AI715980981001_alternate10?$rl_4x5_pdp$" alt="Product 2">
+                <h3>Product Two</h3>
+                <p>This is a short description of Product Two. You'll love it!</p>
+                <span class="price">₹89,990</span>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQvWjrArcHiVQUs505SkjR3pwhKsXAjXqikFuJhlQsoRZSE5jQQF15Kfm1VJaotZ0X78Z9UMJ-IxwJFTzKM-O8tJBhyvb0ZTEMBVczvm5QSCrUhR01AJ81z7g" alt="Product 3">
+                <h3>Product Three</h3>
+                <p>This is a short description of Product Three. </p>
+                <span class="price">₹5,499</span>
+            </div>
+
+            <div class="product-card">
+                <img src="https://imagescdn.thecollective.in/img/app/product/1/1066319-16461122.jpg?w=900&auto=format" alt="Product 4">
+                <h3>Product Four</h3>
+                <p>This is a short description of Product Four. Top quality!</p>
+                <span class="price">₹3,999</span>
+            </div>
+
+            <div class="product-card">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSujlESZ5kbKqZQm3PAAkcjK8vzwZT6YDkt3X8qSkpr2F_GGIQyLtgg6e8eI2m4x25AmbyZcHr-vj_gbsQpapgeOwl_dYcVPluOboHRaxtirqqYUv0418v-2A" alt="Product 5">
+                <h3>Product Five</h3>
+                <p>This is a short description of Product Five. Essential item!</p>
+                <span class="price">₹16,999</span>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSEbb5WLAn_jpZ-znXWo59SEso8X4D3T0Y8NTQWdcOvCcOZYxM__9C7uUFun7Hb2G_hlmfrpG5jt8JGTe_bnzefAJvC0I--q6w2Lxz6BSXX4Y0kVRMLay2Z" alt="Product 6">
+                <h3>Product Six</h3>
+                <p>This is a short description of Product Six. Best seller!</p>
+                <span class="price">₹6,999</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
